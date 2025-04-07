@@ -1,0 +1,191 @@
+/* === Sidebar === */
+.sidebar {
+    width: 16rem;
+    background-color: white;
+    border-right: 1px solid #e5e7eb;
+    padding: 1rem;
+  }
+  
+  .sidebar-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .sidebar-nav a {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: #4b5563;
+    gap: 0.75rem;
+    font-size: 0.875rem;
+  }
+  
+  .sidebar-nav a:hover {
+    background-color: #f9fafb;
+  }
+  
+  .sidebar-nav .active {
+    background-color: #eff6ff;
+    color: #2563eb;
+  }
+  
+  
+  /* === Header === */
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .header-left h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .header-left p {
+    color: #6b7280;
+  }
+  
+  .profile-button {
+    background-color: #f3f4f6;
+    border-radius: 9999px;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  /* === Stats === */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .stat-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .stat-title {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .stat-value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+  
+  .stat-sub {
+    font-size: 0.875rem;
+    color: #059669;
+    margin-top: 0.25rem;
+  }
+  
+  
+  /* === Recent Bookings === */
+  .recent-bookings {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    overflow-x: auto;
+  }
+  
+  .recent-bookings-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  
+  .bookings-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .bookings-table th,
+  .bookings-table td {
+    padding: 1rem;
+    font-size: 0.875rem;
+    text-align: left;
+  }
+  
+  .bookings-table thead {
+    background-color: #f9fafb;
+    color: #6b7280;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+  
+  .bookings-table tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .booking-status.active {
+    background-color: #d1fae5;
+    color: #065f46;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+  }
+  
+  .booking-status.pending {
+    background-color: #fef3c7;
+    color: #92400e;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+  }
+  
+  
+  /* === User Activity === */
+  .user-activity {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .user-activity-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  
+  .user-activity-body {
+    padding: 1.5rem;
+  }
+  
+  .activity-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .activity-details {
+    flex: 1;
+  }
+  
+  .activity-name {
+    font-weight: 500;
+  }
+  
+  .activity-time {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  

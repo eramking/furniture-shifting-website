@@ -1,16 +1,40 @@
-import React from 'react';
+// src/components/HeroSection.js
+import React from "react";
+import { Button } from "./Button";
 
-const HeroSection = () => {
+export const HeroSection = () => {
   return (
-    <section className="bg-[#493939] text-white text-center p-16">
-      <h1 className="text-5xl font-semibold">Easy & Secure Furniture Shifting</h1>
-      <p className="mt-4 text-2xl">Book professional movers in just a few clicks</p>
-      <p className="mt-6 max-w-3xl mx-auto text-lg opacity-70">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-      </p>
-      <button className="mt-6 bg-[#6b6262] text-xl px-8 py-4 rounded">Book Now</button>
-    </section>
+    <div className="hero-section">
+      <div className="column">
+        <div className="content">
+          <p className="medium-length-hero">
+            Easy & Secure Furniture Shifting Made Simple
+          </p>
+          <p className="lorem-ipsum-dolor">
+            Experience a hassle-free moving process with our professional team.
+            Book your move in just a few clicks and enjoy peace of mind.
+          </p>
+        </div>
+        <div className="actions">
+          <Button
+            alternate
+            className="button-instance"
+            divClassName="design-component-instance-node"
+            iconPosition="no-icon"
+            small={false}
+            style="primary"
+            text="Book Now"
+          />
+          <Button
+            alternate
+            className="button-2"
+            iconPosition="no-icon"
+            small={false}
+            style="secondary"
+            text="Learn More"
+          />
+        </div>
+      </div>
+    </div>
   );
 };
-
-export default HeroSection;

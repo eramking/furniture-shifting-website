@@ -1,0 +1,631 @@
+/* src/style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .App {
+    background-color: #f5f5f5;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 20px 0;
+  }
+  
+  .navbar .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .navbar .content-2 {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .navbar .column {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .navbar .link-text {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .navbar .nav-link-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .navbar .icon-instance-node {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .navbar .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .navbar .mega-menu {
+    display: none; /* Hidden by default, can be toggled with JS */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  .navbar .mega-menu:hover {
+    display: block;
+  }
+  
+  .navbar .menu {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .navbar .menu-list {
+    flex: 1;
+  }
+  
+  .navbar .text-wrapper-2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .navbar .list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .navbar .menu-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .navbar .content-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .navbar .text-wrapper-3 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .navbar .lorem-ipsum-dolor {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .navbar .blog {
+    flex: 1;
+  }
+  
+  .navbar .blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .navbar .blog-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .navbar .placeholder-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+  
+  .navbar .content-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .navbar .content-5 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .navbar .read-more {
+    font-size: 14px;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  /* HeroSection Styles */
+  .hero-section {
+    background-color: #333;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    background-image: url("https://via.placeholder.com/1440x600");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-section .column {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .hero-section .content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .hero-section .medium-length-hero {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .hero-section .lorem-ipsum-dolor {
+    font-size: 18px;
+    color: #ddd;
+  }
+  
+  .hero-section .actions {
+    display: flex;
+    gap: 15px;
+  }
+  
+  /* FeatureSection Styles */
+  .feature-section {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Layout1 Styles */
+  .layout {
+    padding: 50px 20px;
+  }
+  
+  .layout .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .layout .tagline-wrapper {
+    margin-bottom: 10px;
+  }
+  
+  .layout .tagline {
+    font-size: 14px;
+    color: #007bff;
+    text-transform: uppercase;
+  }
+  
+  .layout .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .layout .heading {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .layout .text {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .layout .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .layout .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .layout .card,
+  .layout .card-2,
+  .layout .card-3 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .layout .div,
+  .layout .content-2 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .layout .div-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .layout .tagline-2 {
+    font-size: 12px;
+    color: #007bff;
+    text-transform: uppercase;
+  }
+  
+  .layout .heading-2 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .layout .p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .layout .actions {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .layout .image,
+  .layout .placeholder-image-wrapper {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .layout .placeholder-image,
+  .layout .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Layout2 Styles */
+  .layout .container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .layout .content {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .layout .placeholder-image {
+    flex: 1;
+    min-width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  /* Testimonial Styles */
+  .testimonial {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .testimonial .content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .testimonial .stars {
+    width: 100px;
+    height: 20px;
+  }
+  
+  .testimonial .quote {
+    font-size: 18px;
+    font-style: italic;
+    color: #666;
+  }
+  
+  .testimonial .avatar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .testimonial .avatar-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .testimonial .avatar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .testimonial .text {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .testimonial .text-wrapper {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .testimonial .divider {
+    height: 30px;
+  }
+  
+  .testimonial .placeholder-logo {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Contact Styles */
+  .contact {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .contact .section-title {
+    margin-bottom: 40px;
+  }
+  
+  .contact .div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .contact .div-2 {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .contact .icon-instance-node {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .contact .div-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+  }
+  
+  .contact .heading-2 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .contact .text-2 {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .contact .link {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contact .placeholder-image {
+    flex: 1;
+    min-width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 20px;
+  }
+  
+  .footer .content {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  
+  .footer .newsletter {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer .div,
+  .footer .p {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .footer .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footer .form {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer .links {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .footer .column {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer .text-wrapper-2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .footer .div-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footer .link,
+  .footer .link-2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer .text-wrapper-3,
+  .footer .text-wrapper-4 {
+    font-size: 14px;
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  .footer .text-wrapper-3:hover,
+  .footer .text-wrapper-4:hover {
+    color: #fff;
+  }
+  
+  /* Button Styles */
+  .button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .button.primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .button.secondary {
+    background-color: #6c757d;
+    color: #fff;
+  }
+  
+  .button.link {
+    background: none;
+    color: #007bff;
+    padding: 0;
+  }
+  
+  .button.small {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  .button.alternate {
+    background-color: #0056b3;
+  }
+  
+  /* TextInput Styles */
+  .text-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar .content {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .navbar .content-2 {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .navbar .column {
+      flex-direction: column;
+    }
+  
+    .hero-section .medium-length-hero {
+      font-size: 32px;
+    }
+  
+    .layout .container {
+      flex-direction: column;
+    }
+  
+    .contact .div {
+      flex-direction: column;
+    }
+  
+    .footer .content {
+      flex-direction: column;
+    }
+  }
